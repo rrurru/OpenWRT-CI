@@ -61,7 +61,7 @@ fi
 DTS_PATH="./target/linux/qualcommax/dts/"
 if [[ "${WRT_TARGET^^}" == *"QUALCOMMAX"* ]]; then
 	#取消nss相关feed
-	echo "CONFIG_FEED_nss_packages=n" >> ./.config
+	echo "CONFIG_FEED_nss_packages=y" >> ./.config
 	echo "CONFIG_FEED_sqm_scripts_nss=n" >> ./.config
 	#设置NSS版本
 	echo "CONFIG_NSS_FIRMWARE_VERSION_12_5=y" >> ./.config
